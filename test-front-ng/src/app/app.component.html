@@ -1,0 +1,13 @@
+<main class="content" role="main">
+  <header class="header">
+    <button type="button" class="btn btn-outline-secondary" *ngIf="requestService.isRegistred" (click)="logout()" routerLink="/">
+      Log out
+    </button>
+    <button type="button" class="btn btn-outline-secondary" *ngIf="requestService.isRegistred" routerLink="/limits">
+      Change limits
+    </button>
+  </header>
+  <router-outlet>
+    
+  </router-outlet>
+</main>

@@ -1,0 +1,9 @@
+<div class="homeBox" *ngIf="requestService.isRegistred">
+  <p>You successfully logged in!</p>
+  <a routerLink="/" (click)="logout()">Log out</a>
+</div>
+
+<div *ngIf="!requestService.isRegistred">
+  <p>You have logging issue!</p>
+  <a routerLink="/">Try again!</a>
+</div>
